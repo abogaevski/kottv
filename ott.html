@@ -45,7 +45,7 @@
         </div>
       </div>
 
-      <nav class="header-nav" data-dropdown="nav">
+      <!-- <nav class="header-nav" data-dropdown="nav">
         <div class="header-nav__link">
           <a href="index.html">24 часа ТВ</a>
         </div>
@@ -63,91 +63,8 @@
             </svg>
           </span>Войти в личный кабинет
         </div>
-      </nav>
+      </nav> -->
 
-      <div class="header-login" data-dropdown="login">
-        <button title="Close (Esc)" type="button" class="header-login__close" data-dropdown-close>×</button>
-        <div class="content-wrapper_narrow">
-          <div class="header-login__title">
-            Вход в личный кабинет
-          </div>
-          <div class="header-login__description">
-            Управление услугами и оплата
-          </div>
-
-          <form class="login-form" action="#" data-login-step="1">
-            <div class="grid-row">
-              <div class="grid-col-7 grid-col-12_xs">
-                <div class="header-login__input-text">
-                  <label for="loginPhone">Введите номер телефона</label>
-                  <input class="phone-mask" type="text" name="loginPhone" id="loginPhone" placeholder="+7 (999) 999-99-99" data-mask="phone" required>
-                  <div class="header-login__input-description">Вам будет отправлено SMS с кодом доступа.</div>
-                </div>
-                <div class="header-login__checkbox-group">
-                  <div class="header-login__checkbox">
-                    <label>
-                      <input type="checkbox" name="loginPersonalData" id="loginPersonalData" required checked>
-                      <span class="header-login__checkmark"></span>
-                      <span class="header-login__checkbox-msg">Принимаю условия <a href="#">пользовательского соглашения</a></span>
-                    </label>
-                  </div>
-                  <div class="header-login__checkbox">
-                    <label>
-                      <input type="checkbox" name="checkbox" id="remember-me" checked>
-                      <span class="header-login__checkmark"></span>
-                      <span class="header-login__checkbox-msg">Запомнить меня</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="grid-col-5 grid-col-12_xs">
-                <div class="header-login__input-submit">
-                  <input type="submit" value="Получить пароль">
-                </div>
-              </div>
-            </div>
-          </form>
-
-          <form class="login-form _border" method="post" action="#" data-login-step="2" style="display: none;">
-            <input type='hidden' name='csrfmiddlewaretoken' value='KTCyfXn07tCEH9iU0TLpdV9W1Z4OtoJsR2UrqIsQ5mwkXmpKgfsq5R5GRWyvwGih' />
-            <input type="hidden" name="action" value="otp_login" />
-            <input type="hidden" name="phone" value="" data-login-input="phone" />
-            <div class="grid-row">
-              <div class="grid-col-7 grid-col-12_xs">
-                <div class="header-login__input-text">
-                  <label for="userCode">Введите код</label>
-                  <input type="text" name="token" id="userCode" placeholder="6 символов из SMS" required>
-                  <div class="header-login__input-description">
-                    На номер <span data-user="phone"></span> была отправлена SMS с кодом доступа в личный кабинет.
-                  </div>
-                </div>
-              </div>
-              <div class="grid-col-5 grid-col-12_xs">
-                <div class="header-login__input-submit">
-                  <input type="submit" value="Войти">
-
-                  <div class="header-login__input-repeat is-disabled" data-send-again>
-                    <span></span> Отправить повторно
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
-          <!--
-          <div class="header-login__social-msg">
-            <span>Если привязана соц.сеть</span>
-          </div>
-          <div class="header-login__social-authorization">
-            <a class="header-login__social-button" href="#">
-              <img src="//static.24h.tv/landing/castle/img/intro/google-icon-small.png"> Войти через Google
-            </a>
-            <a class="header-login__social-button" href="#">
-              <img src="//static.24h.tv/landing/castle/img/intro/fb-icon-small.png"> Войти через Facebook
-            </a>
-          </div>
-          -->
-        </div>
-      </div>
     </header>
     <main>
       <div id="intro">
@@ -177,10 +94,10 @@
         <div class="content-wrapper">
           <div class="display_desktop">
             <div class="intro__title">
-              <nobr>ТВ-сервис</nobr> с&nbsp;удобными технологиями просмотра, поиска и&nbsp;управления эфиром
+              <nobr>ТВ-сервис</nobr> с удобными технологиями просмотра, поиска и управления эфиром
             </div>
             <div class="intro__subtitle">
-              телевидение и&nbsp;кино на&nbsp;любом устройстве по&nbsp;всей России
+              телевидение и кино на любом устройстве по всей Беларуси
             </div>
           </div>
           <div class="display_mobile-xs">
@@ -188,7 +105,7 @@
               ТВ-сервис
             </div>
             <div class="intro__subtitle">
-              с&nbsp;удобными технологиями просмотра телевидения и&nbsp;кино по&nbsp;всей России
+              с удобными технологиями просмотра телевидения и кино по всей Беларуси
             </div>
           </div>
 
