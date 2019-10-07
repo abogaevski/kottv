@@ -82,28 +82,28 @@ footer,
   background: #e042b1;
   /* Old browsers */
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #3172a9 0%, #e042b1 50%, #3172a9 100%);
+  background: -webkit-linear-gradient(left, #5259bf 0%, #f25cc0 50%, #05dbf3 120%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #3172a9 0%, #e042b1 50%, #3172a9 100%);
+  background: linear-gradient(to right, #5259bf 0%, #f25cc0 50%, #05dbf3 120%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-size: 200%;
   background-position: right;
 }
 
 .font-color_pink-blue {
-  color: #e042b1;
+  color: #f25cc0;
 }
 
 @supports (-webkit-background-clip: text) {
   .font-color_pink-blue {
     -webkit-background-clip: text !important;
     color: transparent !important;
-    background: #e042b1;
+    background: #f25cc0;
     /* Old browsers */
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #e042b1 0%, #3172a9 100%);
+    background: -webkit-linear-gradient(left, #5259bf 0%, #f25cc0 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #e042b1 0%, #3172a9 100%);
+    background: linear-gradient(to right, #5259bf 0%, #f25cc0 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   }
 
@@ -395,7 +395,7 @@ header {
   width: 100%;
   z-index: 99;
   overflow-y: auto;
-  box-shadow: 0px -10px 34px #666;
+  box-shadow: 0px -10px 34px rgba(134, 130, 130, 0.4);
 }
 
 header:after {
@@ -404,7 +404,7 @@ header:after {
   height: 1px;
   width: 100%;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #eee;
 }
 
 .header-main {
@@ -568,8 +568,8 @@ header:after {
 
 .header-main__connect {
   display: block;
-  padding: 0px 38px;
-  border-radius: 30px;
+  padding: 0px 35px;
+  border-radius: 1px;
   font-family: Gothic-regular;
   font-size: 20px;
   line-height: 50px;
@@ -580,14 +580,15 @@ header:after {
   background: #0074c8;
   /* Old browsers */
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #3faffe 0%, #0074c8 30%);
+  background: -webkit-linear-gradient(left, #f25cc0 0%, #5259bf 70%, #05dbf3 120%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #3faffe 0%, #0074c8 30%);
+  background: linear-gradient(to right, #f25cc0 0%, #5259bf 70%, #05dbf3 120%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background-size: 200%;
+  background-size: 250%;
   -webkit-transition: 0.7s;
   transition: 0.7s;
   background-position: right;
+  text-transform: uppercase;
 }
 
 .header-main__connect:hover {
@@ -1091,6 +1092,9 @@ header:after {
 
   .header-main .content-wrapper_wide {
     padding: 0 10px;
+    /* justify-content: center; */
+    /* -ms-flex-pack: center; */
+    /* -webkit-box-pack: center; */
   }
 
   .header-main__menu-link {
@@ -1102,8 +1106,8 @@ header:after {
   }
 
   .header-main__connect {
-    font-size: 18px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 52px;
   }
 
   .header-nav__link-group {
@@ -1535,7 +1539,7 @@ main {
 
 /* offers */
 #try-now {
-  background-image: url(../img/background-try-now.png);
+  background: radial-gradient(at bottom, #05dbf3 20%, #5259bf);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -1609,16 +1613,18 @@ main {
   font-family: Gothic-bold;
   font-size: 22px;
   padding: 17px 70px 20px;
-  border-radius: 30px;
+  border-radius: 1px;
   color: #fff;
   text-decoration: none;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+  box-shadow: 0 15px 30px 0px rgba(82, 89, 191, 0.5);
+
 }
 
 .offer__link a:hover {
   text-decoration: none;
-  background-position: left;
+  background-position: 20%;
 }
 
 #special-offer .offer__link a {
@@ -1648,7 +1654,7 @@ main {
 
   .offer__link a {
     padding: 19px 70px 33px;
-    border-radius: 70px;
+    /* border-radius: 70px; */
     font-size: 32px;
   }
 
@@ -1691,7 +1697,7 @@ main {
 
 .quality__title {
   font-family: Gothic-regular;
-  font-size: 48px;
+  font-size: 42px;
   letter-spacing: -0.5px;
   text-align: center;
   margin-bottom: 48px;
@@ -1745,7 +1751,7 @@ main {
 
 .quality__headline {
   font-family: Gothic-regular;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 1.2;
   margin-bottom: 25px;
 }
@@ -1778,7 +1784,7 @@ main {
 }
 
 .quality__footnote span {
-  color: #0074c8;
+  color: #f25cc0;
 }
 
 @media only screen and (max-width: 991px) {
