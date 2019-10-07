@@ -82,9 +82,9 @@ footer,
   background: #e042b1;
   /* Old browsers */
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #5259bf 0%, #f25cc0 50%, #05dbf3 120%);
+  background: -webkit-linear-gradient(left, #5259bf 20%, #f25cc0 120%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #5259bf 0%, #f25cc0 50%, #05dbf3 120%);
+  background: linear-gradient(to right, #5259bf 20%, #f25cc0 120%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-size: 200%;
   background-position: right;
@@ -338,7 +338,7 @@ footer,
 }
 
 .mfp-close-btn-in .mfp-close {
-  color: #0074c8;
+  color: #5259bf;
 }
 
 .mfp-close-btn-in .mfp-close:active {
@@ -512,7 +512,7 @@ header:after {
   pointer-events: none;
   width: 100%;
   height: 100%;
-  fill: #0074c8;
+  fill: #5259bf;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -524,13 +524,13 @@ header:after {
 .header-main__enter {
   position: relative;
   padding: 0px 30px 0px 58px;
-  border: 2px solid #0074c8;
+  border: 2px solid #5259bf;
   border-radius: 30px;
   background-color: #fff;
   font-family: Gothic-regular;
   font-size: 20px;
   line-height: 46px;
-  color: #0074c8;
+  color: #5259bf;
   margin-right: 32px;
   cursor: pointer;
   -webkit-transition: 0.5s;
@@ -557,7 +557,7 @@ header:after {
   pointer-events: none;
   width: 100%;
   height: 100%;
-  fill: #0074c8;
+  fill: #5259bf;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -576,8 +576,8 @@ header:after {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-  background-color: #0074c8;
-  background: #0074c8;
+  background-color: #5259bf;
+  background: #5259bf;
   /* Old browsers */
   /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #f25cc0 0%, #5259bf 70%, #05dbf3 120%);
@@ -598,7 +598,7 @@ header:after {
 .header-nav {
   display: none;
   padding: 29px 0;
-  background-color: #0074c8;
+  background-color: #5259bf;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -610,7 +610,7 @@ header:after {
   top: 100%;
   left: 0;
   z-index: -1;
-  box-shadow: 0 0 100px 30px #0074c8;
+  box-shadow: 0 0 100px 30px #5259bf;
 } */
 .header-nav.is-active {
   display: block;
@@ -640,7 +640,7 @@ header:after {
 
 .header-nav__link a:hover {
   background-color: #004d99;
-  color: #0074c8;
+  color: #5259bf;
 }
 
 .header-nav__link-group {
@@ -692,7 +692,7 @@ header:after {
   top: 100%;
   left: 0;
   z-index: -1;
-  box-shadow: 0 0 100px 30px #0074c8;
+  box-shadow: 0 0 100px 30px #5259bf;
 } */
 .header-login__close {
   display: block;
@@ -711,7 +711,7 @@ header:after {
   box-shadow: none;
   touch-action: manipulation;
   font-family: Arial, Baskerville, monospace;
-  color: #0074c8;
+  color: #5259bf;
   font-size: 44px;
   line-height: 44px;
   opacity: 1;
@@ -775,7 +775,7 @@ header:after {
 }
 
 .header-login__input-text input:focus {
-  border-color: #0074c8;
+  border-color: #5259bf;
 }
 
 .header-login__input-text input.error {
@@ -816,10 +816,10 @@ header:after {
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: #0074c8;
-  background: #0074c8;
-  background: -webkit-linear-gradient(left, #3faffe 0%, #0074c8 30%);
-  background: linear-gradient(to right, #3faffe 0%, #0074c8 30%);
+  background-color: #5259bf;
+  background: #5259bf;
+  background: -webkit-linear-gradient(left, #3faffe 0%, #5259bf 30%);
+  background: linear-gradient(to right, #3faffe 0%, #5259bf 30%);
   background-size: 200%;
   -webkit-transition: 0.7s;
   transition: 0.7s;
@@ -1554,7 +1554,8 @@ main {
 }
 
 #try-for-free {
-  background-image: url(../img/background-try-for-free.png);
+  /* background-image: url(../img/background-try-for-free.png); */
+  background: radial-gradient(at bottom, #05dbf3 20%, #5259bf);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -1934,9 +1935,9 @@ main {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 4px;
-  background-image: -webkit-linear-gradient(left, transparent, transparent 50%, #000 50%, #000 100%), -webkit-linear-gradient(left, #e042b1, #3172a9);
-  background-image: linear-gradient(90deg, transparent, transparent 50%, #000 50%, #000 100%), linear-gradient(90deg, #e042b1, #3172a9);
+  height: 3px;
+  background-image: -webkit-linear-gradient(left, transparent, transparent 50%, #000 50%, #000 100%), -webkit-linear-gradient(left, #f25cc0, #5259bf);
+  background-image: linear-gradient(90deg, transparent, transparent 50%, #000 50%, #000 100%), linear-gradient(90deg, #f25cc0, #5259bf);
   background-size: 8px 3px, 100% 2px;
   border: none;
   -webkit-transition: 0.5s;
@@ -1974,7 +1975,7 @@ main {
   font-family: Gothic-bold;
   font-size: 22px;
   padding: 17px 70px 20px;
-  border-radius: 30px;
+  border-radius: 1px;
   color: #fff;
   text-decoration: none;
   -webkit-transition: 0.7s;
@@ -2261,8 +2262,8 @@ main {
 }
 
 .key-features__carousel .slick-dots li.slick-active {
-  color: #0074c8;
-  border-color: #0074c8;
+  color: #5259bf;
+  border-color: #5259bf;
 }
 
 .key-features__carousel .slick-dots li svg {
@@ -2276,7 +2277,7 @@ main {
 }
 
 .key-features__carousel .slick-dots li.slick-active svg {
-  fill: #0074c8;
+  fill: #5259bf;
 }
 
 .key-features__carousel .key-features__carousel-link {
@@ -2373,7 +2374,7 @@ main {
 }
 
 .key-features__catalog-description a {
-  color: #0074c8;
+  color: #f25cc0;
   text-decoration: none;
 }
 
@@ -2411,7 +2412,7 @@ main {
   font-family: Gothic-bold;
   font-size: 20px;
   letter-spacing: -0.5px;
-  color: #0074c8;
+  color: #5259bf;
   text-align: center;
 }
 
@@ -2468,15 +2469,15 @@ main {
 .key-features__headline {
   margin-bottom: 17px;
   font-family: Gothic-regular;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.2;
 }
 
 .key-features__description p {
   margin: 0 0 24px;
   font-family: Gothic-regular;
-  font-size: 20px;
-  letter-spacing: -0.4px;
+  font-size: 18px;
+  letter-spacing: -0.2px;
   line-height: 1.2;
   color: #4c4c4c;
 }
@@ -2493,7 +2494,7 @@ main {
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: -0.5px;
-  color: #0074c8;
+  color: #5259bf;
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -2508,7 +2509,7 @@ main {
   top: 21px;
   height: 19px;
   width: 19px;
-  background-image: url(http://static.24h.tv/landing/castle/img/checked.svg);
+  background-image: url(../img/icons/checked.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -2600,13 +2601,13 @@ main {
   }
 
   .key-features__headline {
-    font-size: 42px;
+    font-size: 32px;
     max-width: 500px;
     margin: 0 auto 23px;
   }
 
   .key-features__description p {
-    font-size: 28px;
+    font-size: 24px;
     margin: 0 0 30px;
   }
 
@@ -2646,7 +2647,7 @@ main {
   }
 
   .key-features__headline {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .key-features__description p {
@@ -2795,7 +2796,7 @@ main {
 
 .device-info__title {
   font-family: Gothic-bold;
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
   margin-bottom: 15px;
 }
@@ -2804,7 +2805,7 @@ main {
   padding: 0 10px;
   margin-bottom: 36px;
   font-family: Gothic-bold;
-  font-size: 16px;
+  font-size: 14px;
   color: #b2b2b2;
   line-height: 1.2;
 }
@@ -2816,8 +2817,8 @@ main {
 .device-info__details {
   display: inline-block;
   padding: 0px 35px;
-  border: 1px solid #9384a4;
-  border-radius: 30px;
+  border: 1px solid #eeeeee;
+  border-radius: 1px;
   font-family: Gothic-regular;
   font-size: 16px;
   line-height: 44px;
@@ -2832,8 +2833,8 @@ a.device-info__details {
 }
 
 a.device-info__details:hover {
-  border-color: #fff;
-  background-color: #fff;
+  border-color: #eeeeee;
+  background-color: #eeeeee;
   color: #000;
 }
 
@@ -3000,13 +3001,13 @@ span.device-info__details {
 .subscriptions__section-title {
   margin-bottom: 56px;
   font-family: Gothic-regular;
-  font-size: 48px;
+  font-size: 42px;
   letter-spacing: -0.4px;
   text-align: center;
 }
 
 .subscriptions__add-now {
-  margin-bottom: 58px;
+  /* margin-bottom: 58px; */
   font-size: 16px;
   color: #666666;
   text-align: center;
@@ -3023,7 +3024,7 @@ span.device-info__details {
 }
 
 .subscriptions__add-now a:hover {
-  color: #0074c8;
+  color: #5259bf;
 }
 
 .tariff {
@@ -3115,7 +3116,7 @@ span.device-info__details {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  border: 2px solid #0074c8;
+  border: 2px solid #5259bf;
   background-position: center;
   background-size: 70%;
   background-repeat: no-repeat;
@@ -3140,7 +3141,7 @@ span.device-info__details {
 .tariff__available-channels a {
   color: #000;
   text-decoration: none;
-  border-bottom: #0074c8 2px dotted;
+  border-bottom: #5259bf 2px dotted;
 }
 
 .tariff__available-channels a:hover {
@@ -3160,7 +3161,7 @@ span.device-info__details {
   text-align: center;
   font-family: Gothic-regular;
   font-size: 32px;
-  color: #0074c8;
+  color: #5259bf;
   margin-bottom: 25px;
 }
 
@@ -3177,10 +3178,10 @@ span.device-info__details {
   font-size: 18px;
   text-decoration: none;
   color: #fff;
-  background-color: #0074c8;
-  background: #0074c8;
-  background: -webkit-linear-gradient(left, #3faffe 0%, #0074c8 30%);
-  background: linear-gradient(to right, #3faffe 0%, #0074c8 30%);
+  background-color: #5259bf;
+  background: #5259bf;
+  background: -webkit-linear-gradient(left, #3faffe 0%, #5259bf 30%);
+  background: linear-gradient(to right, #3faffe 0%, #5259bf 30%);
   background-size: 200%;
   -webkit-transition: 0.7s;
   transition: 0.7s;
@@ -3513,7 +3514,7 @@ span.device-info__details {
 .cinema__price {
   font-family: Gothic-regular;
   font-size: 32px;
-  color: #0074c8;
+  color: #5259bf;
   text-align: center;
 }
 
@@ -3639,7 +3640,7 @@ span.device-info__details {
 .tv-package__price {
   font-family: Gothic-regular;
   font-size: 32px;
-  color: #0074c8;
+  color: #5259bf;
   text-align: center;
 }
 
@@ -4183,7 +4184,7 @@ span.device-info__details {
 }
 
 .callback__input-text input:focus {
-  border-color: #0074c8;
+  border-color: #5259bf;
 }
 
 .callback__input-text input.error {
@@ -4216,7 +4217,7 @@ span.device-info__details {
   line-height: 1;
   color: #fff;
   text-align: center;
-  border-radius: 40px;
+  border-radius: 1px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -4638,11 +4639,11 @@ footer {
   margin-top: -28px;
   height: 56px;
   width: 56px;
-  border: 2px solid #0074c8;
+  border: 2px solid #5259bf;
   border-radius: 100%;
   font-family: Gothic-bold;
   font-size: 28px;
-  color: #0074c8;
+  color: #5259bf;
   line-height: 60px;
   text-align: center;
 }
@@ -4788,7 +4789,7 @@ footer {
   max-width: 404px;
   margin-left: 60px;
   padding: 18px 32px;
-  border: 2px solid #0074c8;
+  border: 2px solid #5259bf;
   border-radius: 6px;
   font-family: Gothic-bold;
   font-size: 24px;
@@ -4899,6 +4900,12 @@ footer {
   color: #666666;
   text-align: center;
   cursor: pointer;
+}
+@media(min-width:1024px) {
+  .popup-channels__category {
+    min-height: 145px;
+  }
+
 }
 
 .popup-channels__category.is-active {

@@ -198,51 +198,51 @@ $(document).ready(function(){
     }
   });
 
-  $('[data-login-step="1"]').validate({
-    messages: {
-      loginPhone: {
-        required: 'Введите ваш телефон',
-        loginPhone: 'Неверный формат телефона'
-      },
-      loginPersonalData: 'Необходимо ваше согласие на обработку персональных данных'
-    },
-    rules: {
-      loginPhone: {
-        phoneFormat: true
-      }
-    },
-    submitHandler: function(form){
-      $('[data-user="phone"]').html($('#loginPhone').val());
-      $('[data-login-input="phone"]').val($('#loginPhone').val());
-      $('[data-login-step="1"]').hide();
-      $('[data-login-step="2"]').show();
-      countDown(59);
-      $.ajax({
-        contentType: 'application/json',
-        data: '{ "phone": "' + $('#loginPhone').val() + '" }',
-        dataType: 'json',
-        success: function(data){
-          console.log("Successfull send OTP");
-        },
-        error: function(){
-          console.log("Error send OTP");
-        },
-        processData: false,
-        type: 'POST',
-        url: APIOTPURL
-      });
-    }
-  });
+  // $('[data-login-step="1"]').validate({
+  //   messages: {
+  //     loginPhone: {
+  //       required: 'Введите ваш телефон',
+  //       loginPhone: 'Неверный формат телефона'
+  //     },
+  //     loginPersonalData: 'Необходимо ваше согласие на обработку персональных данных'
+  //   },
+  //   rules: {
+  //     loginPhone: {
+  //       phoneFormat: true
+  //     }
+  //   },
+  //   submitHandler: function(form){
+  //     $('[data-user="phone"]').html($('#loginPhone').val());
+  //     $('[data-login-input="phone"]').val($('#loginPhone').val());
+  //     $('[data-login-step="1"]').hide();
+  //     $('[data-login-step="2"]').show();
+  //     countDown(59);
+  //     $.ajax({
+  //       contentType: 'application/json',
+  //       data: '{ "phone": "' + $('#loginPhone').val() + '" }',
+  //       dataType: 'json',
+  //       success: function(data){
+  //         console.log("Successfull send OTP");
+  //       },
+  //       error: function(){
+  //         console.log("Error send OTP");
+  //       },
+  //       processData: false,
+  //       type: 'POST',
+  //       url: APIOTPURL
+  //     });
+  //   }
+  // });
 
-  $('[data-login-step="2"]').validate({
-    messages: {
-      userCode: 'Введите код',
-    },
-    submitHandler: function(form){
-      form.submit();
-      console.log('yay!');
-    }
-  });
+  // $('[data-login-step="2"]').validate({
+  //   messages: {
+  //     userCode: 'Введите код',
+  //   },
+  //   submitHandler: function(form){
+  //     form.submit();
+  //     console.log('yay!');
+  //   }
+  // });
 
   jQuery.validator.addMethod('phoneFormat', function(value, element) {
     return this.optional( element ) || /\+7\s\(\9\d{2}\)\s\d{3}-\d{2}-\d{2}/i.test( value );
