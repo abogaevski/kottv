@@ -170,7 +170,7 @@ $(document).ready(function(){
   // Валидации
   $('[data-callback="form"]').validate({
     messages: {
-      fio: 'Введите ваше имя',
+      fio:  'Введите ваше имя',
       phone: {
         required: 'Введите ваш телефон',
         loginPhone: 'Неверный формат телефона'
@@ -180,7 +180,7 @@ $(document).ready(function(){
     rules: {
       phone: {
         phoneFormat: true
-      }
+      },
     },
     submitHandler: function(form){
       $('[data-callback="form"]').hide();
@@ -192,81 +192,39 @@ $(document).ready(function(){
           $('[data-callback="success"]').show();
         },
         error:function(){
-
+          console.log("ERROROROR")
         }
       });
     }
   });
 
-  // $('[data-login-step="1"]').validate({
-  //   messages: {
-  //     loginPhone: {
-  //       required: 'Введите ваш телефон',
-  //       loginPhone: 'Неверный формат телефона'
-  //     },
-  //     loginPersonalData: 'Необходимо ваше согласие на обработку персональных данных'
-  //   },
-  //   rules: {
-  //     loginPhone: {
-  //       phoneFormat: true
-  //     }
-  //   },
-  //   submitHandler: function(form){
-  //     $('[data-user="phone"]').html($('#loginPhone').val());
-  //     $('[data-login-input="phone"]').val($('#loginPhone').val());
-  //     $('[data-login-step="1"]').hide();
-  //     $('[data-login-step="2"]').show();
-  //     countDown(59);
-  //     $.ajax({
-  //       contentType: 'application/json',
-  //       data: '{ "phone": "' + $('#loginPhone').val() + '" }',
-  //       dataType: 'json',
-  //       success: function(data){
-  //         console.log("Successfull send OTP");
-  //       },
-  //       error: function(){
-  //         console.log("Error send OTP");
-  //       },
-  //       processData: false,
-  //       type: 'POST',
-  //       url: APIOTPURL
-  //     });
-  //   }
-  // });
-
-  // $('[data-login-step="2"]').validate({
-  //   messages: {
-  //     userCode: 'Введите код',
-  //   },
-  //   submitHandler: function(form){
-  //     form.submit();
-  //     console.log('yay!');
-  //   }
-  // });
-
   jQuery.validator.addMethod('phoneFormat', function(value, element) {
-    return this.optional( element ) || /\+7\s\(\9\d{2}\)\s\d{3}-\d{2}-\d{2}/i.test( value );
+    return this.optional( element ) || /\+375\s\(\d{2}\)\s\d{3}-\d{2}-\d{2}/i.test( value );
   }, 'Неверный формат телефона');
 
-  // Таймер повторной отправки
-  var myTimer = $('[data-send-again] span');
-  var myBtn = $('[data-send-again]');
-  function countDown(timeout) {
-    if (timeout < 10) {
-      myTimer.html("00:0" + timeout);
-    } else {
-      myTimer.html("00:" + timeout);
-    }
-    if (timeout <= 0) {
-      myBtn.removeClass('is-disabled');
-      console.log('Ready!');
-      return;
-    }
-    timeout -= 1;
-    window.setTimeout(function(){
-      countDown(timeout);
-    }, 1000);
-  }
+  jQuery.extend(jQuery.validator.messages, {
+    required: "Обязательное поле"
+});
+
+  // // Таймер повторной отправки
+  // var myTimer = $('[data-send-again] span');
+  // var myBtn = $('[data-send-again]');
+  // function countDown(timeout) {
+  //   if (timeout < 10) {
+  //     myTimer.html("00:0" + timeout);
+  //   } else {
+  //     myTimer.html("00:" + timeout);
+  //   }
+  //   if (timeout <= 0) {
+  //     myBtn.removeClass('is-disabled');
+  //     console.log('Ready!');
+  //     return;
+  //   }
+  //   timeout -= 1;
+  //   window.setTimeout(function(){
+  //     countDown(timeout);
+  //   }, 1000);
+  // }
 
   //Табы телеканалов
   $(document).on('click', '[data-category-tabs-link]', function(){
@@ -312,7 +270,7 @@ $(document).ready(function(){
 
 
   // Маски
-  $('[data-mask="phone"]').mask('+7 (999) 999-99-99', {
+  $('[data-mask="phone"]').mask('+375 (99) 999-99-99', {
     placeholder:" ",
     skipOptionalPartCharacter: " ",
     clearIncomplete: true,
