@@ -18,11 +18,11 @@
       }
     </style>
     <linearGradient id="linear-gradient" x1="945" y1="4220" x2="1030.94" y2="4220" gradientUnits="userSpaceOnUse">
-      <stop  offset="0%" style="stop-color:#5259bf"/>
+      <stop  offset="0%" style="stop-color:#f25cc0"/>
 		  <stop  offset="100%" style="stop-color:#f25cc0"/>
     </linearGradient>
     <filter id="filter" x="966" y="4204" width="36" height="32" filterUnits="userSpaceOnUse">
-      <feImage preserveAspectRatio="none" x="966" y="4204" width="36" height="32" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzYiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzNiAzMiI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHkxPSIxNi42MjkiIHgyPSIzNiIgeTI9IjE1LjM3MSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCAgb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzUyNTliZiIvPgoJCSAgPHN0b3AgIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I2YyNWNjMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMzYiIGhlaWdodD0iMzIiLz4KPC9zdmc+Cg=="/>
+      <feImage preserveAspectRatio="none" x="966" y="4204" width="36" height="32" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzYiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzNiAzMiI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHkxPSIxNi42MjkiIHgyPSIzNiIgeTI9IjE1LjM3MSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCAgb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I2YyNWNjMCIvPgoJCSAgPHN0b3AgIG9mZnNldD0iMTAwJSIgc3R5bGU9InN0b3AtY29sb3I6I2YyNWNjMCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMzYiIGhlaWdodD0iMzIiLz4KPC9zdmc+Cg=="/>
       <feComposite result="composite" operator="in" in2="SourceGraphic"/>
       <feBlend result="blend" in2="SourceGraphic"/>
     </filter>

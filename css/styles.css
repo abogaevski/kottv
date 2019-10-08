@@ -78,36 +78,26 @@ footer,
   margin-right: auto;
 }
 
-.bg-gradient_pink-blue {
+.bg-gradient_pink {
   background: #e042b1;
-  /* Old browsers */
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #5259bf 20%, #f25cc0 120%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #5259bf 20%, #f25cc0 120%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background-size: 200%;
-  background-position: right;
 }
+.bg-gradient_pink:hover{
+  background: #5259bf;
 
-.font-color_pink-blue {
-  color: #f25cc0;
+}
+.font-color_pink {
+  color: #5259bf;
+  
 }
 
 @supports (-webkit-background-clip: text) {
-  .font-color_pink-blue {
+  .font-color_pink {
     -webkit-background-clip: text !important;
     color: transparent !important;
-    background: #f25cc0;
-    /* Old browsers */
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #5259bf 0%, #f25cc0 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #5259bf 0%, #f25cc0 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: #5259bf;
   }
 
-  .font-color_pink-blue a {
+  .font-color_pink a {
     color: transparent;
   }
 }
@@ -576,23 +566,15 @@ header:after {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-  background-color: #5259bf;
   background: #5259bf;
-  /* Old browsers */
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #f25cc0 0%, #5259bf 70%, #05dbf3 120%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #f25cc0 0%, #5259bf 70%, #05dbf3 120%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background-size: 250%;
   -webkit-transition: 0.7s;
   transition: 0.7s;
-  background-position: right;
   text-transform: uppercase;
 }
 
 .header-main__connect:hover {
-  background-position: left;
+  background: #f25cc0;
+  box-shadow: 0 10px 25px -5px rgba(82, 89, 191, 0.35)
 }
 
 .header-nav {
@@ -1776,10 +1758,10 @@ main {
 .quality__footnote {
   max-width: 720px;
   margin: 0 auto;
-  font-family: Gothic-bold;
+  font-family: Gothic-regular;
   font-size: 15px;
   line-height: 1.2;
-  letter-spacing: -0.9px;
+  letter-spacing: -0.3px;
   color: #b2b2b2;
   text-align: center;
 }
@@ -1928,7 +1910,7 @@ main {
   position: relative;
   text-decoration: none;
 }
-
+/* 
 .channels__number a:after {
   content: '';
   position: absolute;
@@ -1942,7 +1924,7 @@ main {
   border: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
+} */
 
 .channels__number a:hover:after {
   opacity: 0;
@@ -4207,6 +4189,10 @@ span.device-info__details {
   justify-content: flex-start;
   height: 100%;
 }
+.callback__input-submit .bg-gradient_pink {
+  box-shadow: 0 15px 30px 0px rgba(82, 89, 191, 0.25);
+}
+
 
 .callback__input-submit input {
   display: block;
