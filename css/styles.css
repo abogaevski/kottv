@@ -2348,7 +2348,7 @@ main {
 .key-features__catalog-description {
   max-width: 550px;
   padding-left: 13px;
-  font-family: Gothic-bold;
+  font-family: Gothic-regular;
   font-size: 16px;
   letter-spacing: -0.3px;
   line-height: 1.2;
@@ -2786,7 +2786,7 @@ main {
 .device-info__about {
   padding: 0 10px;
   margin-bottom: 36px;
-  font-family: Gothic-bold;
+  font-family: Gothic-regular;
   font-size: 14px;
   color: #b2b2b2;
   line-height: 1.2;
