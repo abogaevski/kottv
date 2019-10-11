@@ -3686,86 +3686,11 @@ span.device-info__details {
 
   .tariff__subscribe a {
     padding: 23px 70px;
-    border-radius: 50px;
+    border-radius: 1px;
     font-size: 24px;
   }
 
   .tariff__footnote {
-    font-size: 24px;
-  }
-
-  .tariff-premium {
-    background-image: none;
-    margin: 0 -10px 57px;
-    padding: 0;
-  }
-
-  .tariff-premium__title {
-    font-size: 52px;
-    padding: 66px 26px 77px;
-    line-height: 1.1;
-  }
-
-  .tariff-premium__features {
-    padding: 30px 30px 46px;
-  }
-
-  .tariff-premium__name {
-    font-family: Gothic-regular;
-    font-size: 42px;
-    color: #fff;
-    margin-bottom: 50px;
-  }
-
-  .tariff-premium__feature {
-    min-height: 73px;
-    padding-left: 91px;
-    margin-bottom: 26px;
-    font-size: 28px;
-  }
-
-  .tariff-premium__feature:before {
-    width: 71px;
-    height: 71px;
-    top: 0;
-  }
-
-  .tariff-premium__feature.tariff-premium__feature_cinema {
-    margin-bottom: 43px;
-  }
-
-  .tariff-premium__feature_cinema .tariff-premium__feature-row {
-    padding: 4px 0 16px;
-  }
-
-  .tariff-premium__total-price {
-    font-size: 52px;
-    text-align: center;
-  }
-
-  .tariff-premium__total-price span:before {
-    height: 6px;
-    top: 35px;
-    left: 7px;
-  }
-
-  .tariff-premium__about {
-    max-width: 554px;
-    margin: 0 auto 58px;
-    padding: 0 10px;
-  }
-
-  .tariff-premium__subscribe {
-    margin-bottom: 35px;
-  }
-
-  .tariff-premium__subscribe a {
-    font-size: 32px;
-    padding: 26px;
-    border-radius: 60px;
-  }
-
-  .tariff-premium__footnote {
     font-size: 24px;
   }
 
