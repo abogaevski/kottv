@@ -81,13 +81,15 @@ footer,
 .bg-gradient_pink {
   background: #e042b1;
 }
-.bg-gradient_pink:hover{
+
+.bg-gradient_pink:hover {
   background: #5259bf;
 
 }
+
 .font-color_pink {
   color: #5259bf;
-  
+
 }
 
 @supports (-webkit-background-clip: text) {
@@ -510,6 +512,30 @@ header:after {
 .header-main__logo:hover svg {
   fill: #3faffe;
 }
+
+.header-main-mobile__logo {
+  position: absolute;
+  left: 80px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 54px;
+  width: 216px;
+}
+
+.header-main-mobile__logo svg {
+  pointer-events: none;
+  width: 70px;
+  height: 100%;
+  fill: #5259bf;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header-main-mobile__logo:hover svg {
+  fill: #3faffe;
+}
+
 
 .header-main__enter {
   position: relative;
@@ -1014,6 +1040,12 @@ header:after {
     width: 257px;
   }
 
+  .header-main-mobile__logo {
+    display: none;
+    left: 0;
+    width: 190px;
+  }
+
   .header-main__connect {
     font-size: 24px;
     line-height: 55px;
@@ -1085,6 +1117,9 @@ header:after {
 
   .header-main__logo {
     display: none;
+  }
+  .header-main-mobile__logo {
+    display: block;
   }
 
   .header-main__connect {
@@ -1166,6 +1201,16 @@ main {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1);
   /* IE6-9 */
   z-index: 2;
+}
+
+@media(max-width: 639px) {
+  #intro::before {
+    display: none;
+  }
+
+  #intro::after {
+    display: none;
+  }
 }
 
 .intro__channels-carousel {
@@ -1706,6 +1751,7 @@ main {
   position: relative;
   text-decoration: none;
 }
+
 /* 
 .channels__number a:after {
   content: '';
@@ -1902,10 +1948,10 @@ main {
     height: 110px;
   }
 
-  .channels__see-all-button {
+  /* .channels__see-all-button {
     font-size: 12px;
     padding: 14px 15px 15px;
-  }
+  } */
 
   .channels__about-cinema {
     max-width: 300px;
@@ -1936,7 +1982,7 @@ main {
 
 #key-features .content-wrapper {
   position: relative;
-    z-index: 3;
+  z-index: 3;
 }
 
 .key-features__carousel {
@@ -2060,6 +2106,7 @@ main {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
+
 .key-features__carousel .slick-arrow.key-features__carousel-nav_left {
   -webkit-transform: rotate(45deg) translateY(-50%);
   transform: rotate(45deg) translateY(-50%);
@@ -2073,6 +2120,7 @@ main {
   border-width: 0 2px 2px 0;
   right: 0px;
 }
+
 .key-features__carousel .slick-arrow {
   content: "";
   position: absolute;
@@ -2507,6 +2555,7 @@ main {
   .key-features__catalog-description {
     font-size: 18px;
   }
+
   .key-features__carousel {
     min-height: 140px;
     padding: 0 20px;
@@ -2756,7 +2805,6 @@ span.device-info__details {
     min-width: 273px;
     font-size: 24px;
     line-height: 70px;
-    border-radius: 50px;
   }
 
   .device-info__image {
@@ -4030,6 +4078,7 @@ span.device-info__details {
   justify-content: flex-start;
   height: 100%;
 }
+
 .callback__input-submit .bg-gradient_pink {
   box-shadow: 0 15px 30px 0px rgba(82, 89, 191, 0.25);
 }
@@ -4728,6 +4777,7 @@ footer {
   text-align: center;
   cursor: pointer;
 }
+
 @media(min-width:1024px) {
   .popup-channels__category {
     min-height: 145px;
