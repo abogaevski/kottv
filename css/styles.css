@@ -111,6 +111,7 @@ footer,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 -10px;
+  margin-bottom: 70px;
 }
 
 .grid-col {
@@ -1118,6 +1119,7 @@ header:after {
   .header-main__logo {
     display: none;
   }
+
   .header-main-mobile__logo {
     display: block;
   }
@@ -2868,6 +2870,12 @@ span.device-info__details {
   background-color: #e6eaf2;
   overflow: hidden;
 }
+#subscriptions .content-wrapper {
+  max-width: 1170px;
+}
+#subscriptions .grid-col-3 {
+  padding: 0 5px;
+}
 
 .subscriptions__section-title {
   margin-bottom: 56px;
@@ -2898,6 +2906,7 @@ span.device-info__details {
   color: #5259bf;
 }
 
+
 .tariff {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2906,9 +2915,8 @@ span.device-info__details {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 570px;
+  min-height: 530px;
   background-color: #fff;
-  margin-bottom: 20px;
 }
 
 .tariff__header {
@@ -2916,6 +2924,7 @@ span.device-info__details {
   padding: 35px 10px;
   text-align: center;
   overflow: hidden;
+  background: #05dbf3;
 }
 
 .tariff__header_promo:before {
@@ -2952,7 +2961,7 @@ span.device-info__details {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding: 29px 50px 0px;
+  padding: 29px 15px 0px;
 }
 
 .tariff__feature {
@@ -2970,8 +2979,8 @@ span.device-info__details {
   justify-content: center;
   padding-left: 62px;
   margin-bottom: 15px;
-  font-family: Gothic-bold;
-  font-size: 20px;
+  font-family: Gothic-regular;
+  font-size: 18px;
   color: #333333;
 }
 
@@ -2987,22 +2996,22 @@ span.device-info__details {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  border: 2px solid #5259bf;
+  border: 2px solid #f25cc0;
   background-position: center;
   background-size: 70%;
   background-repeat: no-repeat;
 }
 
 .tariff__feature_connection:before {
-  background-image: url(http://static.24h.tv/landing/castle/img/tariff-connection.svg);
+  background-image: url(/img/tariffs/tariff-connection.svg);
 }
 
 .tariff__feature_channels:before {
-  background-image: url(http://static.24h.tv/landing/castle/img/tariff-tv.svg);
+  background-image: url(/img/tariffs/tariff-tv.svg);
 }
 
 .tariff__feature_cinema:before {
-  background-image: url(http://static.24h.tv/landing/castle/img/tariff-cinema.svg);
+  background-image: url(/img/tariffs/tariff-cinema.svg);
 }
 
 .tariff__available-channels {
@@ -3012,7 +3021,7 @@ span.device-info__details {
 .tariff__available-channels a {
   color: #000;
   text-decoration: none;
-  border-bottom: #5259bf 2px dotted;
+  border-bottom: #5259bf 1px dotted;
 }
 
 .tariff__available-channels a:hover {
@@ -3025,7 +3034,7 @@ span.device-info__details {
 
 .tariff__footer {
   min-height: 204px;
-  padding: 0px 50px 30px
+  padding: 0px 15px 30px
 }
 
 .tariff__price {
@@ -3044,23 +3053,20 @@ span.device-info__details {
 .tariff__subscribe a {
   display: inline-block;
   padding: 15px 40px;
-  border-radius: 30px;
   font-family: Gothic-regular;
   font-size: 18px;
   text-decoration: none;
   color: #fff;
-  background-color: #5259bf;
-  background: #5259bf;
-  background: -webkit-linear-gradient(left, #3faffe 0%, #5259bf 30%);
-  background: linear-gradient(to right, #3faffe 0%, #5259bf 30%);
+  background-color: #f25cc0;
+  background: #f25cc0;
   background-size: 200%;
   -webkit-transition: 0.7s;
   transition: 0.7s;
-  background-position: right;
+  border-radius: 1px;
 }
 
 .tariff__subscribe a:hover {
-  background-position: left;
+  background: #5259bf;
 }
 
 .tariff__footnote {
@@ -3069,7 +3075,22 @@ span.device-info__details {
   font-size: 16px;
 }
 
-.tariff-premium {
+.tariff-spec {
+  box-shadow: 0 10px 25px -5px rgba(82, 89, 191, 0.35);
+}
+.tariff-spec .tariff__header {
+  background: #5259bf;
+}
+.tariff-spec .tariff__subscribe a {
+  background: #5259bf;
+}
+.tariff-spec .tariff__subscribe a:hover {
+  background: #05dbf3;
+  color: black;
+
+}
+
+/* .tariff-premium {
   min-height: 530px;
   padding: 63px 53px 20px;
   margin-bottom: 70px;
@@ -3096,7 +3117,7 @@ span.device-info__details {
   font-size: 32px;
   color: #fff;
   margin-bottom: 32px;
-}
+} */
 
 .tariff-premium__features {
   padding-right: 21px;
@@ -4354,6 +4375,13 @@ footer {
   font-size: 16px;
   letter-spacing: -0.5px;
 }
+.footer__social {
+  margin-top: 10px
+}
+.footer__social-icon {
+  display: inline-block;
+  max-width: 40px;
+}
 
 .footer__copyright {
   position: absolute;
@@ -4425,7 +4453,11 @@ footer {
   }
 
   .footer__address {
+    margin-bottom: 20px;
+  }
+  .footer__social {
     margin-bottom: 50px;
+    text-align: center;
   }
 
   .footer__item {
