@@ -111,7 +111,6 @@ footer,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 -10px;
-  margin-bottom: 70px;
 }
 
 .grid-col {
@@ -601,7 +600,7 @@ header:after {
 
 .header-main__connect:hover {
   background: #f25cc0;
-  box-shadow: 0 10px 25px -5px rgba(82, 89, 191, 0.35)
+  box-shadow: 0 10px 25px -5px rgba(82, 89, 191, 0.35);
 }
 
 .header-nav {
@@ -1246,11 +1245,10 @@ main {
 
 .channels-slide {
   display: inline-block;
-  width: 140px;
+  width: 750px;
   height: 80px;
   background-position: center;
   background-size: cover;
-  margin: 0 5px;
 }
 
 #intro .content-wrapper {
@@ -1939,7 +1937,7 @@ main {
   }
 
   .channels__number {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .channels__catalog {
@@ -2842,7 +2840,7 @@ span.device-info__details {
 
 @media only screen and (max-width: 639px) {
   .devices__title {
-    font-size: 48px;
+    font-size: 34px;
   }
 
   .devices__description-continue {
@@ -2917,6 +2915,7 @@ span.device-info__details {
   flex-direction: column;
   min-height: 530px;
   background-color: #fff;
+  margin-bottom: 70px;
 }
 
 .tariff__header {
@@ -3160,17 +3159,6 @@ span.device-info__details {
   margin-bottom: 7px;
 }
 
-.tariff-premium__feature_connection:before {
-  background-image: url(http://static.24h.tv/landing/castle/img/tariff-connection-white.svg);
-}
-
-.tariff-premium__feature_channels:before {
-  background-image: url(http://static.24h.tv/landing/castle/img/tariff-tv-white.svg);
-}
-
-.tariff-premium__feature_cinema:before {
-  background-image: url(http://static.24h.tv/landing/castle/img/tariff-cinema-white.svg);
-}
 
 .tariff-premium__feature-row {
   display: -webkit-box;
@@ -4436,10 +4424,10 @@ footer {
   padding: 38px 60px 38px 140px;
   margin: 0 auto -55px;
   background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 0 40px -20px #3f3f3f;
+  border-radius: 1px;
+  box-shadow: 0 10px 25px -5px rgba(82, 89, 191, 0.35);
   font-family: Gothic-bold;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: -0.5px;
   line-height: 1.1;
 }
@@ -4477,7 +4465,7 @@ footer {
   font-family: Gothic-bold;
   font-size: 28px;
   color: #5259bf;
-  line-height: 60px;
+  line-height: 54px;
   text-align: center;
 }
 
@@ -4486,7 +4474,7 @@ footer {
   padding: 90px 40px 41px;
   margin-bottom: 25px;
   background-color: #f5f6f7;
-  border-radius: 20px;
+  border-radius: 1px;
 }
 
 .popup-connect__device {
@@ -4505,7 +4493,7 @@ footer {
 
 .popup-connect__device-name {
   font-size: 20px;
-  font-family: Gothic-bold;
+  font-family: Gothic-regular;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -4585,7 +4573,7 @@ footer {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-family: Gothic-bold;
+  font-family: Gothic-regular;
   font-size: 18px;
   color: #000;
   text-decoration: none;
@@ -4594,7 +4582,7 @@ footer {
 .popup-connect__devices-note {
   max-width: 750px;
   margin: 0 auto 57px;
-  font-family: Gothic-bold;
+  font-family: Gothic-regular;
   font-size: 16px;
   letter-spacing: -0.3px;
   line-height: 1.2;
@@ -4614,7 +4602,7 @@ footer {
   max-width: 600px;
   padding: 124px 40px 82px;
   background-color: #f5f6f7;
-  border-radius: 10px;
+  border-radius: 1px;
 }
 
 .popup-connect__search-input {
@@ -4638,7 +4626,7 @@ footer {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-image: url(http://static.24h.tv/landing/castle/img/magnifying-glass.svg);
+  background-image: url(/img/magnifying-glass.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4646,7 +4634,7 @@ footer {
 
 .popup-connect__search-logo {
   position: relative;
-  padding: 106px 136px 35px;
+  padding: 100px 110px 35px;;
 }
 
 .popup-connect__search-logo:before {
@@ -4655,9 +4643,9 @@ footer {
   position: absolute;
   width: 32px;
   height: 32px;
-  left: 70px;
+  left: 40px;
   top: 50%;
-  background-image: url(http://static.24h.tv/landing/castle/img/arrows-right.svg);
+  background-image: url(/img/arrows-right.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4665,13 +4653,13 @@ footer {
 
 .popup-connect__search-logo img {
   display: block;
-  width: 106px;
+  width: 280px;
   height: auto;
 }
 
 .popup-connect__footer {
   padding: 95px 100px 43px;
-  background-color: #fff;
+  background-color: #f25cc0;
   background-image: url(../img/tariff-premium-bg.jpg);
   background-image: url(../img/tariff-premium-bg.jpg);
   background-position: center;
@@ -4754,15 +4742,8 @@ footer {
   height: 4px;
   left: 0;
   bottom: 0;
-  background: #e042b1;
-  /* Old browsers */
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #e042b1 0%, #3172a9 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #e042b1 0%, #3172a9 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e042b1', endColorstr='#3172a9', GradientType=1);
-  /* IE6-9 */
+  background: #f25cc0;
+
 }
 
 .popup-channels__category-name {
@@ -4820,7 +4801,7 @@ footer {
 .popup-channels__section-channel {
   width: 121px;
   margin-bottom: 25px;
-  font-family: Gothic-bold;
+  font-family: Gothic-regular;
   font-size: 13px;
   text-align: center;
 }
@@ -4931,7 +4912,7 @@ footer {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    background-image: url(http://static.24h.tv/landing/castle/img/arrows-down.svg);
+    background-image: url(/img/arrows-down.svg);
   }
 
   .popup-connect__search-logo img {
