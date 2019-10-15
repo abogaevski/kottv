@@ -4240,15 +4240,11 @@ footer {
     text-align: center;
     margin-bottom: 10px;
   }
-  .footer__social .footer__social-icon {
-    width: 60px;
-    height: 60px;
-  }
 
   .footer__item {
-    font-size: 24px;
+    /* font-size: 24px; */
     padding-left: 40px;
-    margin-bottom: 28px;
+    margin-bottom: 15px;
   }
 
   .footer__copyright {
