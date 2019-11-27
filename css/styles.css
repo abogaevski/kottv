@@ -4192,10 +4192,14 @@ footer {
 .footer__copyright {
   position: absolute;
   left: 10px;
-  bottom: 25px;
+  bottom: 90px;
   font-family: Gothic-regular;
   font-size: 16px;
   letter-spacing: -0.5px;
+  line-height: 20px;;
+}
+.footer__copyright .footer__org-info {
+  color: #999;
 }
 
 .footer__item {
@@ -4216,6 +4220,18 @@ footer {
   color: #000000;
   text-decoration: underline;
 }
+.footer__payment-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.footer__payment-info img.payment-type {
+  max-height: 40px;
+  width: auto;
+}
+
 
 @media only screen and (max-width: 991px) {
   .footer__phone {
