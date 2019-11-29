@@ -4192,7 +4192,7 @@ footer {
 .footer__copyright {
   position: absolute;
   left: 10px;
-  bottom: 90px;
+  bottom: 0px;
   font-family: Gothic-regular;
   font-size: 16px;
   letter-spacing: -0.5px;
@@ -4222,14 +4222,17 @@ footer {
 }
 .footer__payment-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .footer__payment-info img.payment-type {
   max-height: 40px;
   width: auto;
+  margin: 10px;
 }
 
 
