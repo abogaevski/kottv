@@ -92,6 +92,9 @@ footer,
 
 }
 
+.font-color_white {
+  color: #fff;
+}
 @supports (-webkit-background-clip: text) {
   .font-color_pink {
     -webkit-background-clip: text !important;
@@ -1717,12 +1720,12 @@ main {
 
 /* channels */
 #channels {
-  min-height: 1130px;
+  min-height: 1000px;
   padding: 62px 0 46px;
   background-color: #000;
   background-image: url(../img/channels-background.png);
-  background-size: 2200px;
-  background-position: center bottom -160px;
+  background-size: 2000px;
+  background-position: center bottom -110px;
   background-repeat: no-repeat;
   overflow: hidden;
 }
