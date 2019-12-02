@@ -4193,15 +4193,16 @@ footer {
 }
 
 .footer__copyright {
-  position: absolute;
-  left: 10px;
-  bottom: 0px;
+  /* position: absolute; */
+  /* left: 10px; */
+  /* bottom: 0px; */
   font-family: Gothic-regular;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: -0.5px;
   line-height: 20px;;
 }
 .footer__copyright .footer__org-info {
+  font-size: 12px;
   color: #999;
 }
 
@@ -4276,6 +4277,9 @@ footer {
     bottom: 0;
     font-size: 24px;
     text-align: center;
+  }
+  .footer__copyright .footer__org-info {
+    font-size: 16px;
   }
 }
 
